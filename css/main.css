@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Lato");
+@font-face {
+  font-family: 'Simplifica';
+  src: url('../fonts/Simplifica.ttf') format('truetype');
+}
+
 html, body {
   margin: 0;
   padding: 0;
@@ -28,14 +33,16 @@ body {
   text-decoration: none;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  font-size: 17px;
+  font-size: 15px;
   font-family: "Lato", sans-serif;
 }
 .navigation a:hover {
   color: #333333;
+  border-bottom: 1px solid #393939;
 }
 header {
   background-image: url(../img/bg.png);
+  background-size: contain;
   max-height: 100%;
   max-width: 100%;
   height: 800px;
@@ -55,15 +62,30 @@ header {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   font-family: "Lato", sans-serif;
+  line-height: 1px;
 }
-header .header-item {
+.header-item__logo {
+  width: 300px;
+  max-width: 100%;
+  height: auto;
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+.header-item {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 auto;
           flex: 0 1 auto;
   left: 50%;
+  font-family: Simplifica;
+  font-size: 50px;
 }
+.header-item__sub {
+  font-family: Simplifica;
+  font-size: 35px;
+}
+
 .about {
-  background-image: url(../img/bg.png);
+  background-image: url(../img/bg2.png);
   max-height: 100%;
   height: 700px;
   max-width: 100%;
@@ -95,6 +117,7 @@ header .header-item {
   height: auto;
   bottom: 0;
   justify-content: flex-end;
+  padding-top: 182px;
 }
 
 .project {
@@ -114,13 +137,14 @@ header .header-item {
   width: 500px;
   max-width: 100%;
   color: white;
-  padding-right: 40px;
+  padding-right: 50px;
 }
 .project img {
   width: 250px;
   max-width: 100%;
   height: auto;
   bottom: 0;
+  padding-top: 83px;
 }
 .project-title {
   color: white;
@@ -153,12 +177,19 @@ header .header-item {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  font-family: Simplifica;
+}
+
+.contact h2 {
+  font-size: 40px;
 }
 input[type=text] {
     width: 300px;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
+    background-color: #f8f8f8;
+    border: 1px solid #424242;
 }
 input[type=submit] {
     width: 300px;
@@ -166,7 +197,8 @@ input[type=submit] {
     height: 40px;
     background-color: #2E2E2E;
     border: none;
-    color: white;}
+    color: white;
+}
 input {
   display: block;
   box-sizing: border-box;
@@ -177,5 +209,6 @@ textarea {
   box-sizing: border-box;
   background-color: #f8f8f8;
   resize: none;
+  border: 1px solid #424242;
 }
-button:focus {outline:0;}
+button:focus, input:focus, textarea:focus {outline:0;}
