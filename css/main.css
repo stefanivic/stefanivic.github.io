@@ -116,7 +116,7 @@ header {
      -moz-column-width: 200px;
           column-width: 200px;
 }
-.about img {
+#about-image {
   width: 250px;
   max-width: 100%;
   height: auto;
@@ -144,7 +144,7 @@ header {
   color: white;
   padding-right: 50px;
 }
-.project img {
+#project-image {
   width: 250px;
   max-width: 100%;
   height: auto;
@@ -224,10 +224,10 @@ button:focus, input:focus, textarea:focus {outline:0;}
   .project {
     flex-direction: column;
   }
-  .about img {
+  #about-image {
     align-self: center;
   }
-  .project img {
+  #project-image {
     align-self: center;
   }
   .about-container {
@@ -246,4 +246,13 @@ button:focus, input:focus, textarea:focus {outline:0;}
   .project-text {
     width: 300px;
   }
+}
+
+@keyframes dash {
+    from {
+        stroke-dashoffset: 2000;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
 }
