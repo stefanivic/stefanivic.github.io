@@ -27,6 +27,8 @@ nav {
   background-color: #F2F2F2;
   width: 100%;
   z-index: 1;
+  transition: opacity 0.5s ease-out;
+  opacity: 1;
 }
 .navigation li {
   display: inline-block;
@@ -45,6 +47,10 @@ nav {
 .navigation a:hover {
   color: #333333;
   box-shadow: inset 0 -1px 0 0 #393939;
+}
+.navigation-hidden {
+  opacity: 0;
+  display: none;
 }
 header {
   background-size: contain;
