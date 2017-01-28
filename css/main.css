@@ -3,6 +3,8 @@
   font-family: 'Simplifica';
   src: url('../fonts/Simplifica.ttf') format('truetype');
 }
+
+/* BASE */
 html, body {
   margin: 0;
   padding: 0;
@@ -17,6 +19,7 @@ body {
 nav {
   height: 46px;
 }
+/* NAVIGATION */
 .navigation {
   list-style-type: none;
   margin: 0;
@@ -28,7 +31,6 @@ nav {
   width: 100%;
   z-index: 1;
   transition: opacity 0.5s ease-out;
-  opacity: 1;
 }
 .navigation li {
   display: inline-block;
@@ -48,10 +50,11 @@ nav {
   color: #333333;
   box-shadow: inset 0 -1px 0 0 #393939;
 }
-.navigation-hidden {
+.hidden {
   opacity: 0;
-  display: none;
+  visibility: hidden;
 }
+/* HEADER CONTENT */
 header {
   background-size: contain;
   max-height: 100%;
@@ -94,6 +97,7 @@ header {
   font-family: Simplifica;
   font-size: 35px;
 }
+/* ABOUT ME SECTION */
 .about {
   max-height: 100%;
   height: 700px;
@@ -128,6 +132,7 @@ header {
   height: auto;
   align-self: flex-end;
 }
+/* PROJECT SECTION */
 .project {
   max-height: 100%;
   height: 700px;
@@ -178,6 +183,7 @@ header {
   text-decoration: none;
   color: white;
 }
+/* CONTACT SECTION */
 .contact {
   height: 700px;
   max-height: 100%;
@@ -222,7 +228,7 @@ textarea {
 }
 button:focus, input:focus, textarea:focus {outline:0;}
 
-
+/* MEDIA QUERY */
 @media (max-width: 1000px) {
   .about {
     flex-direction: column-reverse;
