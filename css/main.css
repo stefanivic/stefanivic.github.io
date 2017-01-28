@@ -247,12 +247,9 @@ button:focus, input:focus, textarea:focus {outline:0;}
     width: 300px;
   }
 }
-
-@keyframes dash {
-    from {
-        stroke-dashoffset: 2000;
-    }
-    to {
-        stroke-dashoffset: 0;
-    }
+/* For some reason the svg is not responsive in firefox, so i am using this to set the height which seems to fix the issue*/
+@-moz-document url-prefix() { 
+  #project-image {
+    height: 300px;
+  }
 }
