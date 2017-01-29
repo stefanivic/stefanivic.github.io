@@ -265,3 +265,8 @@ button:focus, input:focus, textarea:focus {outline:0;}
     height: 300px;
   }
 }
+
+#mapkit {
+    height:400px;
+    width:900px;
+}
