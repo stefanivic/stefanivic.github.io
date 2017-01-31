@@ -11,7 +11,11 @@
     <!-- Website stylesheets -->
     <link href="css/main.css" rel="stylesheet">
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script> 
+    <script src="https://cdn.mapkit.io/v1/infobox.js"></script> 
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdn.mapkit.io/v1/infobox.css"> 
   </head>
   <body id="start">
     <nav><!-- Navigation start -->
@@ -47,7 +51,7 @@
     <section class="contact" id="contact">
       <h2>Kontakt</h2>
       <div class="contact-container" data-aos="fade-up">
-        <iframe src="https://mapkit.io/embed/VFSjOu" frameborder="0"></iframe>
+        <div id='mapkit'></div>
         <div class="contact-container__social">
         <!-- Twitter social button -->
           <a href="https://twitter.com/thenwkg">
