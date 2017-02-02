@@ -113,7 +113,7 @@ header {
           justify-content: center;
   position: relative;
 }
-.about-container { 
+.about-container {
   width: 550px;
   max-width: 100%;
   padding-left: 50px;
@@ -197,7 +197,7 @@ header {
   border: none;
   color: white;
 }
-.project-button__download:hover { 
+.project-button__download:hover {
   box-shadow: 1px 1px 5px #424242;
 }
 .project-button__download:active {
@@ -320,6 +320,7 @@ button:focus, input:focus, textarea:focus {outline:0;}
     margin-top: 10px;
     margin-bottom: 10px;
     align-self: center;
+    padding-left: 0;
   }
 }
 
@@ -333,7 +334,7 @@ button:focus, input:focus, textarea:focus {outline:0;}
   }
 }
 /* For some reason the svg is not responsive in firefox, so i am using this to set the height which seems to fix the issue*/
-@-moz-document url-prefix() { 
+@-moz-document url-prefix() {
   #project-image {
     height: 300px;
   }

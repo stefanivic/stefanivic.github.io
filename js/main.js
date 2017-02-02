@@ -79,7 +79,7 @@ google.maps.event.addListener(marker, 'click', function() {
             }
         }
 
-        boxText.innerHTML = 
+        boxText.innerHTML =
             buildPieces(location, 'photo', 'photo', '') +
             buildPieces(location, 'iw-toolbar', 'title', '') +
             buildPieces(location, 'div', 'address', 'location_on') +
